@@ -47,11 +47,7 @@ servicesCtrl.updateService = async (req, res) => {
       }
       res.json({ message: "Service updated" });
     }
-<<<<<<< HEAD
   ).catch(() => { }); //Here i catch the promise. Async functions always return a promise.
-=======
-  ).catch(() => {}); //Here i catch the promise. Async functions always return a promise.
->>>>>>> 36f5054089cdd4e947dae21b69dc9fc5f2e4fa89
 };
 
 servicesCtrl.deleteService = async (req, res) => {
