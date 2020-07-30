@@ -1,4 +1,5 @@
 const { Schema, model } = require("mongoose");
+const { serviceSchema } = require("../models/Service")
 
 const timeSchema = new Schema(
   {
@@ -70,23 +71,20 @@ const capacitySchema = new Schema(
 
 const vesselSchema = new Schema(
   {
-    name: {
+    client: {
       type: String
     },
-    model: {
-      type: Number
-    },
-    type: {
+    business: {
       type: String
     },
-    capacity: {
-      type: capacitySchema
+    schedule: {
+      type: timestamps
     },
-    shippingZones: {
-      type: [shippingZoneSchema]
-    },    
-    owner: {
+    state: {
       type: String
+    },
+    service: {
+      type: serviceSchema
     }
   },
   {
