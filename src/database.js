@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 // const uri = `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@cluster0-uvim4.gcp.mongodb.net/test?retryWrites=true&w=majority`;
-const uri = `mongodb://localhost:27017/vessel`;
+const uri = `mongodb://localhost:27017/turnar`;
 
 async function connect() {
   try {
