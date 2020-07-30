@@ -16,7 +16,7 @@ const turnSchema = new Schema(
       type: String
     },
     service: {
-      type: serviceSchema,
+      type: serviceSchema
     }
   },
   {
